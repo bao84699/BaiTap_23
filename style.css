@@ -1,10 +1,10 @@
 body {
-    width: 90vw;
+    width: 97vw;
     height: 100vh;
     background-image: url(Pictures/8fc6e53758f11af0c0968af831cbaa08.jpg);
     display: flex;
-    flex-direction: row;
-    gap: 200px;
+    flex-direction: column;
+    gap: 700px;
     align-items: center;
     font-family: "Inter";
 }
@@ -20,10 +20,10 @@ body {
 
 .banner .slider {
     position: absolute;
-    width: 150px;
-    height: 230px;
+    width: 200px;
+    height: 250px;
     top: 10%;
-    left: calc(50%);
+    left: calc(50% - 100px);
     transform-style: preserve-3d ;
     transform: perspective(1000px);
     animation: autoRun 20s linear infinite;
@@ -42,7 +42,7 @@ body {
     inset: 0 0 0 0;
     transform:
         rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
-        translateZ(350px);
+        translateZ(450px);
 }
 
 .banner .slider .item img {
@@ -53,9 +53,12 @@ body {
     border: 5px solid #cfcfcf;
 }
 .right {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
+    padding-bottom: 100px;
 
 }
 .title {
@@ -67,6 +70,7 @@ body {
     font-size: 18px;
     font-family: 500;
     letter-spacing: 1px;
+    text-align: center;
 }
 
 .button {
